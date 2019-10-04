@@ -1,0 +1,67 @@
+
+.article-list {
+  @apply .w-full;
+
+  &__date-label {
+    @apply .text-right;
+    @apply .font-bold;
+    @apply .my-5;
+
+    &:first-of-type {
+      @apply .mt-0;
+    }
+  }
+
+  li {
+    @apply .my-3;
+
+    a {
+      @apply .flex;
+      @apply .items-center;
+      @apply .text-gray-500;
+      @apply .cursor-pointer;
+      transition: color .6s easeOutQuart;
+
+      >div {
+        height: .1rem;
+        @apply .bg-gray-400;
+        transition: all .6s easeOutQuart;
+        transition-property: width, background-color;
+
+        &:first-of-type {
+          width: 0;
+        }
+
+        &:nth-of-type(2) {
+          @apply .ml-3;
+          @apply .flex-grow;
+        }
+      }
+    }
+
+    h3 {
+      @apply .text-base;
+      @apply .leading-none;
+    }
+
+
+    time {
+      @apply .ml-3;
+    }
+
+    &:hover {
+      a {
+        @apply .text-gray-800;
+  
+        >div {
+          @apply .bg-gray-800;
+  
+          &:first-of-type {
+            @apply .mr-3;
+            width: 1rem;
+          }
+        }
+      }
+    }
+  }
+}

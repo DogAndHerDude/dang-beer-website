@@ -1,0 +1,39 @@
+
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+html {
+  @apply .antialiased;
+  @apply .leading-tight;
+  @apply .text-gray-800;
+  @apply .font-rubik;
+
+  h1,
+  h2,
+  h3 {
+    @apply .font-bold;
+  }
+
+  h4,
+  h5 {
+
+  }
+
+  h1 {
+    @apply .text-4xl;
+  }
+
+  h2 {
+    @apply .text-2xl;
+  }
+
+  h3 {
+    @apply .text-xl;
+  }
+
+  p {
+    @apply .text-base;
+    @apply .leading-snug;
+  }
+}

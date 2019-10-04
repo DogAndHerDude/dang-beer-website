@@ -12,14 +12,45 @@
     "gatsby-plugin-react-helmet": "^3.1.10",
     "gatsby-plugin-sharp": "^2.2.27",
     "gatsby-source-filesystem": "^2.1.28",
+    "gatsby-transformer-remark": "^2.6.26",
     "gatsby-transformer-sharp": "^2.2.19",
     "prop-types": "^15.7.2",
     "react": "^16.10.0",
     "react-dom": "^16.10.0",
-    "react-helmet": "^5.2.1"
+    "react-helmet": "^5.2.1",
+    "typeface-frank-ruhl-libre": "0.0.72",
+    "typeface-gilda-display": "0.0.72",
+    "typeface-muli": "0.0.71",
+    "typeface-nunito": "0.0.72",
+    "typeface-poppins": "0.0.72",
+    "typeface-rubik": "0.0.72",
+    "typeface-source-serif-pro": "0.0.75"
   },
   "devDependencies": {
-    "prettier": "^1.18.2"
+    "@types/jest": "^24.0.18",
+    "@types/node": "^12.7.8",
+    "@types/react": "^16.9.3",
+    "@types/react-dom": "^16.9.1",
+    "@types/react-helmet": "^5.0.11",
+    "autoprefixer": "^9.6.1",
+    "gatsby-plugin-postcss": "^2.1.10",
+    "gatsby-plugin-sass": "^2.1.17",
+    "gatsby-plugin-typescript": "^2.1.11",
+    "jest": "^24.9.0",
+    "node-sass": "^4.12.0",
+    "postcss-easings": "^2.0.0",
+    "postcss-nested": "^4.1.2",
+    "postcss-preset-env": "^6.7.0",
+    "prettier": "^1.18.2",
+    "stylelint": "^11.0.0",
+    "stylelint-config-recommended": "^3.0.0",
+    "tailwindcss": "^1.1.2",
+    "ts-jest": "^24.1.0",
+    "tslint": "^5.20.0",
+    "tslint-config-prettier": "^1.18.0",
+    "tslint-microsoft-contrib": "^6.2.0",
+    "tslint-react": "^4.1.0",
+    "typescript": "^3.6.3"
   },
   "keywords": [
     "gatsby"
@@ -28,9 +59,10 @@
   "scripts": {
     "build": "gatsby build",
     "develop": "gatsby develop",
-    "format": "prettier --write \"**/*.{js,jsx,json,md}\"",
+    "format": "prettier --write \"**/*.{js,jsx,ts,tsx,json,md}\"",
     "start": "npm run develop",
     "serve": "gatsby serve",
+    "lint": "tslint",
     "test": "echo \"Write tests! -> https://gatsby.dev/unit-testing \""
   },
   "repository": {

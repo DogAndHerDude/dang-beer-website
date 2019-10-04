@@ -15,7 +15,17 @@ export const LISTE_ITEM_CURRENT_CLASS = `${LIST_ITEM_CLASS}--current`;
 export function Navigation(props: INavigationProps): React.ReactElement<INavigationProps> {
 
   function isCurrentRoute(): boolean {
-    return NAVIGATION_CONFIG.routes.find(item => item.path === window.location.pathname) !== void 0;
+    // if (!window) {
+    //   return false;
+    // }
+    // FUCK YOU GATSBY
+    // WORTHLESS TRASH
+    // Doesn't allow window in build
+    // Doesn't pass any route properties into the page either
+    // How am I to check the routes then?
+    // Fucking imbeciles
+    return false;
+    // return NAVIGATION_CONFIG.routes.find(item => item.path === window.location.pathname) !== void 0;
   }
 
 

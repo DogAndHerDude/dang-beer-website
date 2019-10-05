@@ -1,0 +1,18 @@
+
+.blog-page {
+  @apply .w-full;
+  @apply .min-h-full;
+  @apply .flex;
+  @apply .flex-col;
+  @apply .items-center;
+  @apply .py-32;
+
+  &__content {
+    @apply .w-full;
+    @apply .max-w-xl;
+
+    h1 {
+      @apply .mb-8;
+    }
+  }
+}

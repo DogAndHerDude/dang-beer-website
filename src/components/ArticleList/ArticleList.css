@@ -5,7 +5,8 @@
   &__date-label {
     @apply .text-right;
     @apply .font-bold;
-    @apply .my-5;
+    @apply .mt-8;
+    @apply .mb-5;
 
     &:first-of-type {
       @apply .mt-0;
@@ -41,6 +42,7 @@
 
     h3 {
       @apply .text-base;
+      @apply .font-normal;
       @apply .leading-none;
     }
 

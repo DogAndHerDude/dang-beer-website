@@ -1,8 +1,8 @@
 module.exports = {
-  pathPrefix: "/dangbeer",
+  pathPrefix: "/dang-beer",
   siteMetadata: {
     title: `Dang Beer`,
-    description: `TODO: Write a description`,
+    description: `My personal blog on brewing beer and writing code`,
     author: `Dominykas Bartkus`,
   },
   plugins: [

@@ -31,7 +31,6 @@ export function HomePage(): React.ReactElement<{}> {
       ) {
         edges {
           node {
-            html
             frontmatter {
               date(formatString: "MMMM DD, YYYY")
               path

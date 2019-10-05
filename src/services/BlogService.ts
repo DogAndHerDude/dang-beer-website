@@ -5,6 +5,10 @@ import { BlogPost } from '../models/BlogPost';
 
 export class BlogService {
   public normalizePostsFromQuery(response: any): Array<IBlogPost> {
+    if (!response) {
+      return [];
+    }
+
     return response.allMarkdownRemark.edges.map((entry: any) => new BlogPost(
       entry.node.frontmatter.title,
       entry.node.frontmatter.path,

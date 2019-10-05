@@ -5,6 +5,8 @@ import SEO from '../../components/SEO';
 import Layout from '../../components/Layout';
 import ArticleList from '../../components/ArticleList';
 
+import { IPage } from '../../models/IPage';
+
 import { BlogService } from '../../services/BlogService';
 
 import './Blog.css';
@@ -17,7 +19,7 @@ export const CONTENT_CLASS = `${BASE_CLASS}__content`;
 const blogService = new BlogService();
 
 
-export function BlogPage(props: any): React.ReactElement<{}> {
+export function BlogPage(props: IPage<any>): React.ReactElement<IPage<any>> {
   const [initiated, setInit] = useState(false);
 
   return (
@@ -32,7 +34,7 @@ export function BlogPage(props: any): React.ReactElement<{}> {
         <div className={CONTENT_CLASS}>
           <h1>Recent Thoughts</h1>
           <ArticleList
-            options={blogService.normalizePostsFromQuery(props.data)}
+            options={blogService.normalizePostsFromQuery(props.data !== void 0 ? props.data.allMarkdownRemark : void 0)}
           />
         </div>
       </div>

@@ -17,8 +17,12 @@ export interface IBlogPostData {
 
 
 
+export interface IMarkdownRemark {
+  edges: Array<IBlogPostData>;
+}
+
+
+
 export interface IBlogPostResponse {
-  allMarkdownRemark: {
-    edges: Array<IBlogPostData>;
-  };
+  allMarkdownRemark: IMarkdownRemark;
 }

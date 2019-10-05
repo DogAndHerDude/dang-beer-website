@@ -40,7 +40,7 @@ export function ArticleList(props: IArticleListProps): React.ReactElement<IArtic
   function mapPostsToNodes(posts: IPostMap): Array<React.ReactNode> {
     return Object.keys(posts).sort((a, b) => a > b ? -1 : 1).map((entry: string) => {
       const items = postMap[Number(entry)].map((post, index) => (
-        <li key={index + 1}>
+        <li key={`${entry}${index}`}>
           <a href={post.path} title={post.title}>
             <div />
             <h3>{post.title}</h3>
@@ -53,7 +53,7 @@ export function ArticleList(props: IArticleListProps): React.ReactElement<IArtic
       ));
 
       return [
-        <div className={YEAR_LABEL_CLASS} key={0}>{entry}</div>,
+        <div className={YEAR_LABEL_CLASS} key={entry}>{entry}</div>,
         ...items,
       ];
     }).flat();

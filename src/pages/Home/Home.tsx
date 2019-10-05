@@ -2,6 +2,7 @@
 import React, { useState, useEffect } from 'react';
 import { graphql, useStaticQuery } from 'gatsby';
 
+import { IPage } from '../../models/IPage';
 import { IBlogPost } from '../../models/IBlogPost';
 import { IBlogPostResponse } from '../../models/IBlogPostResponse';
 
@@ -19,7 +20,7 @@ export const BLOG_CONTENT_CLASS = `${BASE_CLASS}__recent-posts-content`;
 export const MOCK_SHADOW_CLASS = `${BASE_CLASS}__mock-shadow`;
 
 
-export function HomePage(): React.ReactElement<{}> {
+export function HomePage(props: IPage<never>): React.ReactElement<IPage<never>> {
 
   const [initiated, setInit] = useState(false);
   const [posts, assignPosts] = useState<Array<IBlogPost>>([]);

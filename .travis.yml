@@ -6,15 +6,11 @@ branches:
     - master
 jobs:
   include:
-    - stage: Setup
-      script: npm i
     - stage: Test
       script: npm test
-    - stage: Lint
       script: npm run lint
-    - stage: Build
-      script: npm run build
     - stage: Deploy
+      script: npm run build
       deploy:
         provider: pages
         skip_cleanup: true,
@@ -24,4 +20,7 @@ jobs:
         repo: theimpressionist/theimpressionist.github.io
         on:
           branch: master
-  
+stages:
+  - Test
+  - name: Deploy
+    if: branch = master

@@ -14,6 +14,8 @@ import 'typeface-rubik';
 import { ILayoutProps } from './ILayout';
 
 import Navigation from '../Navigation';
+import MobileNavigation from '../MobileNavigation';
+
 
 import './Layout.css';
 
@@ -34,6 +36,8 @@ export function Layout(props: ILayoutProps): React.ReactElement<ILayoutProps> {
   return (
     <>
       <Navigation initiated={props.initiated} />
+      <MobileNavigation />
+
       <main>
         {props.children}
       </main>

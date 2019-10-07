@@ -7,10 +7,15 @@ button {
     @apply .bg-transparent;
     @apply .bottom-0;
     @apply .right-0;
-    @apply .pr-20;
-    @apply .pb-20;
     @apply .opacity-0;
+    @apply .pr-5;
+    @apply .pb-6;
     transition: opacity .6s easeOutQuart;
+
+    @screen lg {
+      @apply .pr-20;
+      @apply .pb-20;
+    }
 
     &--visible {
       @apply .opacity-100;

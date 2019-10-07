@@ -8,6 +8,11 @@ nav {
     @apply .left-0;
     @apply .pl-20;
     @apply .pb-20;
+    @apply .hidden;
+
+    @screen lg {
+      @apply .block;
+    }
 
     ul {
       @apply .relative;

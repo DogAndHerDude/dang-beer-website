@@ -36,4 +36,9 @@ html {
     @apply .text-base;
     @apply .leading-snug;
   }
+
+  button {
+    @apply .border-0;
+    @apply .outline-none;
+  }
 }

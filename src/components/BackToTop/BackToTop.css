@@ -1,0 +1,23 @@
+
+button {
+  &.back-top {
+    @apply .fixed;
+    @apply .border-0;
+    @apply .outline-none;
+    @apply .bg-transparent;
+    @apply .bottom-0;
+    @apply .right-0;
+    @apply .pr-20;
+    @apply .pb-20;
+    @apply .opacity-0;
+    transition: opacity .6s easeOutQuart;
+
+    &--visible {
+      @apply .opacity-100;
+    }
+
+    svg {
+      stroke: theme('colors.gray.700');
+    }
+  }
+}

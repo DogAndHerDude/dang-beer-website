@@ -4,6 +4,7 @@ import React, { useState } from 'react';
 import SEO from '../../components/SEO';
 import Layout from '../../components/Layout';
 import ArticleList from '../../components/ArticleList';
+import BackToTop from '../../components/BackToTop';
 
 import { IPage } from '../../models/IPage';
 
@@ -37,6 +38,8 @@ export function BlogPage(props: IPage<any>): React.ReactElement<IPage<any>> {
             options={blogService.normalizePostsFromQuery(props.data !== void 0 ? props.data.allMarkdownRemark : void 0)}
           />
         </div>
+
+        <BackToTop appearThreshold={150} />
       </div>
     </Layout>
   );

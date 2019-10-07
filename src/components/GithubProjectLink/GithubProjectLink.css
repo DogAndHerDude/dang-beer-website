@@ -1,0 +1,14 @@
+
+a {
+  &.project-url {
+    @apply .fixed;
+    @apply .left-0;
+    @apply .bottom-0;
+    @apply .pl-8;
+    @apply .pb-8;
+
+    svg {
+      stroke: theme('colors.gray.400');
+    }
+  }
+}

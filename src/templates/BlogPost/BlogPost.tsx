@@ -4,6 +4,7 @@ import React, { useState } from 'react';
 import { IBlogPostProps } from './IBlogPost';
 
 import Layout from '../../components/Layout';
+import BackToTop from '../../components/BackToTop';
 
 import './BlogPost.css';
 
@@ -52,6 +53,8 @@ export function BlogPostTemplate(props: IBlogPostProps): React.ReactElement<IBlo
             dangerouslySetInnerHTML={{ __html: props.pageContext.html }}
           />
         </article>
+
+        <BackToTop appearThreshold={150} />
       </div>
     </Layout>
   );

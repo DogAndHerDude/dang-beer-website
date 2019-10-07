@@ -18,6 +18,7 @@ jobs:
         keep_history: true
         local_dir: ./public
         repo: theimpressionist/theimpressionist.github.io
+        target_branch: master
         on:
           branch: master
 stages:

@@ -4,11 +4,11 @@ node_js:
 branches:
   only:
     - master
-stages:
+jobs:
   include:
     - stage: Setup
-    - stage: test
-      name: Test
+      script: npm i
+    - stage: Test
       script: npm test
     - stage: Lint
       script: npm run lint

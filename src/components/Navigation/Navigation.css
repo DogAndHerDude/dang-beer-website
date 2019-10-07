@@ -3,7 +3,7 @@ nav {
   &.navigation {
     max-width: 10rem;
     @apply .w-full;
-    @apply .absolute;
+    @apply .fixed;
     @apply .bottom-0;
     @apply .left-0;
     @apply .pl-20;

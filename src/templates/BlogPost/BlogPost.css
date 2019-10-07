@@ -6,11 +6,24 @@
   @apply .flex;
   @apply .flex-col;
   @apply .items-center;
-  @apply .py-32;
+  @apply .py-24;
+
+  @screen lg {
+    @apply .py-48;
+  }
 
   article {
     @apply .w-full;
     @apply .max-w-xl;
+    @apply .px-8;
+
+    @screen lg {
+      @apply .px-0;
+    }
+
+    @screen 2xl {
+      @apply .max-w-2xl
+    }
   }
 
 
@@ -39,22 +52,38 @@
   }
 
   &__content {
-    @apply .py-12;
+    @apply .py-20;
 
     h1 {
-      @apply .my-5;
+      @apply .mt-8;
+      @apply .mb-5;
+
+      &:first-child {
+        @apply .mt-0;
+      }
     }
 
     h2 {
-      @apply .my-4;
+      @apply .mt-10;
+      @apply .mb-4;
+
+      &:first-child {
+        @apply .mt-0;
+      }
     }
 
     h3 {
-      @apply .my-3;
+      @apply .mt-6;
+      @apply .mb-3;
+
+      &:first-child {
+        @apply .mt-0;
+      }
     }
 
     p {
-      @apply .my-2;
+      @apply .my-8;
+      @apply .leading-relaxed;
     }
   }
 }

@@ -6,10 +6,19 @@
   @apply .flex-col;
   @apply .items-center;
   @apply .py-32;
+  @apply .px-8;
+
+  @screen lg {
+    @apply .px-0;
+  }
 
   &__content {
     @apply .w-full;
     @apply .max-w-xl;
+
+    @screen 2xl {
+      @apply .max-w-2xl;
+    }
 
     h1 {
       @apply .mb-8;

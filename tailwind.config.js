@@ -15,6 +15,9 @@ module.exports = {
       fontSize: {
         '7xl': '4.65rem',
       },
+      screens: {
+        '2xl': '1440px',
+      },
     },
   },
   variants: {},

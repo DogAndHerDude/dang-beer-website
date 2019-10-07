@@ -14,7 +14,11 @@
   }
 
   li {
-    @apply .my-3;
+    @apply .my-5;
+
+    @screen lg {
+      @apply .my-3;
+    }
 
     a {
       @apply .flex;

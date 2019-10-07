@@ -18,6 +18,7 @@
     @apply .bg-white;
     @apply .px-20;
     @apply .py-48;
+    @apply .pointer-events-none;
     transition: all .6s easeOutQuart;
     transition-property: opacity, visibility;
 
@@ -88,6 +89,7 @@
     ul {
       @apply .visible;
       @apply .opacity-100;
+      @apply .pointer-events-auto;
     }
   }
 }

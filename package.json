@@ -59,7 +59,7 @@
   "license": "MIT",
   "scripts": {
     "build": "gatsby build --prefix-paths",
-    "deploy": "gh-pages -d public -b master --repo https://github.com/TheImpressionist/dang-beer.git",
+    "deploy": "gh-pages -d public -b master --repo https://github.com/TheImpressionist/theimpressionist.github.io.git",
     "develop": "gatsby develop",
     "format": "prettier --write \"**/*.{js,jsx,ts,tsx,json,md}\"",
     "start": "npm run develop",

@@ -40,5 +40,10 @@ html {
   button {
     @apply .border-0;
     @apply .outline-none;
+
+    &:focus,
+    &:active {
+      @apply .outline-none;
+    }
   }
 }

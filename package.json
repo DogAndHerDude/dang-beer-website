@@ -64,7 +64,7 @@
     "format": "prettier --write \"**/*.{js,jsx,ts,tsx,json,md}\"",
     "start": "npm run develop",
     "serve": "gatsby serve",
-    "lint": "tslint",
+    "lint": "tslint -c tslint.json 'src/**/*.ts'",
     "test": "echo \"Write tests! -> https://gatsby.dev/unit-testing \"",
     "postbuild": "cp ./CNAME ./public/CNAME"
   },

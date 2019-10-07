@@ -14,12 +14,14 @@ jobs:
       script: npm run lint
     - stage: Build
       script: npm run build
-deploy:
-  provider: pages
-  skip_cleanup: true,
-  github_token: $GITHUB_TOKEN
-  keep_history: true
-  local_dir: ./public
-  repo: theimpressionist/theimpressionist.github.io
-  on:
-    branch: master
+    - stage: Deploy
+      deploy:
+        provider: pages
+        skip_cleanup: true,
+        github_token: $GITHUB_TOKEN
+        keep_history: true
+        local_dir: ./public
+        repo: theimpressionist/theimpressionist.github.io
+        on:
+          branch: master
+  

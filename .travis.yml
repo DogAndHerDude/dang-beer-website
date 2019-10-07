@@ -1,0 +1,19 @@
+language: node_js
+branches:
+  only:
+    - master
+stages:
+  include:
+    - stage: test
+    - script: npm test
+    - stage: lint
+    - script: npm run lint
+deploy:
+  provider: pages
+  skip_cleanup: true,
+  github_token: $GITHUB_TOKEN
+  keep_history: true
+  local_dir: /public
+  repo: theimpressionist/theimpressionist.github.io
+  on:
+    branch: master

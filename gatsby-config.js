@@ -5,11 +5,20 @@ module.exports = {
     author: `Dominykas Bartkus`,
   },
   plugins: [
+    `gatsby-plugin-sharp`,
+    `gatsby-transformer-sharp`,
     {
       resolve: `gatsby-source-filesystem`,
       options: {
         name: 'blog',
         path: `${__dirname}/src/blog`,
+      }
+    },
+    {
+      resolve: `gatsby-source-filesystem`,
+      options: {
+        name: 'images',
+        path: `${__dirname}/src/images`,
       }
     },
     `gatsby-transformer-remark`,
@@ -21,8 +30,6 @@ module.exports = {
         path: `${__dirname}/src/images`,
       },
     },
-    `gatsby-transformer-sharp`,
-    `gatsby-plugin-sharp`,
     `gatsby-plugin-postcss`,
     {
       resolve: `gatsby-plugin-typescript`,

@@ -6,6 +6,7 @@
  */
 
 import React from 'react';
+import { Link } from '@reach/router';
 import { useStaticQuery, graphql } from 'gatsby';
 
 // Fonts
@@ -18,6 +19,7 @@ import MobileNavigation from '../MobileNavigation';
 
 
 import './Layout.css';
+import Logo from '../Logo';
 
 
 
@@ -35,6 +37,9 @@ export function Layout(props: ILayoutProps): React.ReactElement<ILayoutProps> {
 
   return (
     <>
+      <Link to="/" title="Dang Beer Home">
+        <Logo />
+      </Link>
       <Navigation initiated={props.initiated} />
       <MobileNavigation />
 

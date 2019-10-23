@@ -11,6 +11,6 @@ module.exports = {
       ]
     }],
     "block-no-empty": null,
-    "unit-whitelist": ["em", "rem", "s", "%", "px"]
+    "unit-whitelist": ["em", "rem", "s", "%", "px", "deg"]
   }
 };

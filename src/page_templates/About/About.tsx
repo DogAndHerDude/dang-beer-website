@@ -52,13 +52,13 @@ export function AboutPage(props: IAboutPageProps): React.ReactElement<IAboutPage
           </div>
           <div className={SOCIAL_ICONS_CLASS}>
             <div>
-              <Link to="https://www.instagram.com/dangbeer/" title="Dang Beer's instagram profile">
+              <a href="https://www.instagram.com/dangbeer/" title="Dang Beer's instagram profile" target="_blank">
                 <Instagram />
-              </Link>
+              </a>
 
-              <Link to="https://twitter.com/DominykasBartk1" title="Dang Beer's twitter profile">
+              <a href="https://twitter.com/DominykasBartk1" title="Dang Beer's twitter profile" target="_blank">
                 <Twitter />
-              </Link>
+              </a>
             </div>
           </div>
         </section>

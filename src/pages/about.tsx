@@ -1,7 +1,7 @@
 
 import { graphql } from 'gatsby';
 
-import AboutPage from './About';
+import AboutPage from '../page_templates/About';
 
 export default AboutPage;
 export const query = graphql`

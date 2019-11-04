@@ -9,7 +9,6 @@ import Layout from '../../components/Layout';
 import { IAboutPageProps } from './IAbout';
 
 import './About.css';
-import { Link } from 'gatsby';
 
 export const BASE_CLASS = 'about-page';
 export const CONTENT_CLASS = `${BASE_CLASS}__content`;
@@ -40,7 +39,7 @@ export function AboutPage(props: IAboutPageProps): React.ReactElement<IAboutPage
   return (
     <Layout initiated={initiated}>
       <SEO
-        title="Dang Beer"
+        title="Dang Beer | About"
         description="placeholder"
         lang="en"
         meta={[]}

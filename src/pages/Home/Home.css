@@ -35,6 +35,7 @@
     @apply .flex-col;
     @apply .px-8;
     @apply .py-40;
+    @apply .relative;
 
     @screen lg {
       @apply .px-20;
@@ -67,6 +68,18 @@
       @apply .text-xl;
       @apply .font-rubik;
       transition: color .3s easeOutQuart;
+    }
+  }
+
+  &__to-blog {
+    left: 50%;
+    bottom: 3rem;
+    transform: translateX(-50%);
+    @apply .absolute;
+    @apply .cursor-pointer;
+
+    @screen lg {
+      @apply .hidden;
     }
   }
 

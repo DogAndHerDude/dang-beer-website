@@ -1,0 +1,107 @@
+
+.contact-page {
+  @apply .w-screen;
+  @apply .min-h-screen;
+  @apply .flex;
+  @apply .flex-col-reverse;
+
+  @screen lg {
+    @apply .min-h-0;
+    @apply .flex-row;
+    @apply .items-center;
+    @apply .justify-center;
+  }
+
+  h1 {
+    @apply .text-5xl;
+    @apply .leading-none;
+    @apply .font-bold;
+    @apply .font-rubik;
+    @apply .mb-3;
+
+    span {
+      @apply .text-yellow-400;
+    }
+  }
+
+  p {
+    @apply .leading-relaxed;
+    @apply .my-8;
+  }
+
+  &>section {
+    @apply .w-full;
+    @apply .px-8;
+    @apply .pt-40;
+    /* @apply .pb-0; */
+
+    &:first-child {
+      @apply .pt-0;
+      @apply .pb-24;
+    }
+
+    @screen lg {
+      @apply .block;
+      @apply .w-1/2;
+      @apply .h-screen;
+      @apply .min-h-screen;
+      @apply .px-8;
+      @apply .pt-48;
+    }
+
+    @screen 2xl {
+      @apply .w-1/2;
+      @apply .h-screen;
+      @apply .min-h-0;
+      @apply .max-w-3xl;
+      max-height: 42rem;
+    }
+
+    &.contact-page__description {
+      @screen lg {
+        @apply .pr-32;
+      }
+    }
+  }
+
+  &__contacts {
+    &>div {
+      @apply .w-full;
+      @apply .relative;
+      
+      @screen lg {
+        @apply .mt-4;
+      }
+
+      &>div {
+        @apply .w-full;
+        @apply .mb-4;
+
+        @screen lg {
+          @apply .flex;
+          @apply .justify-end;
+        }
+      }
+    }
+
+    a {
+      @apply .inline-flex;
+      @apply .flex-row-reverse;
+      @apply .items-center;
+      @apply .font-bold;
+
+      @screen lg {
+        @apply .flex;
+        @apply .flex-row;
+      }
+    }
+
+    svg {
+      @apply .mr-3;
+
+      @screen lg {
+        @apply .ml-3;
+      }
+    }
+  }
+}

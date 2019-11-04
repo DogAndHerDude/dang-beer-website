@@ -1,6 +1,7 @@
 
 import React, { useState, useEffect } from 'react';
 import { graphql, useStaticQuery } from 'gatsby';
+import { ChevronDown } from 'react-feather';
 
 import { IPage } from '../../models/IPage';
 import { IBlogPost } from '../../models/IBlogPost';
@@ -15,6 +16,7 @@ import './Home.css';
 
 export const BASE_CLASS = 'page-home';
 export const LEADING_CLASS = `${BASE_CLASS}__lead`;
+export const SCROLL_CLASS = `${BASE_CLASS}__to-blog`;
 export const BLOG_CLASS = `${BASE_CLASS}__recent-posts`;
 export const BLOG_CONTENT_CLASS = `${BASE_CLASS}__recent-posts-content`;
 export const MOCK_SHADOW_CLASS = `${BASE_CLASS}__mock-shadow`;
@@ -57,6 +59,17 @@ export function HomePage(props: IPage<never>): React.ReactElement<IPage<never>> 
     assignPosts(normalizePosts(blogPostResponse));
   }
 
+
+  function scrollDown(): void {
+    if (typeof window !== 'undefined') {
+      window.scrollTo({
+        top: window.innerHeight,
+        left: 0,
+        behavior: 'smooth',
+      });
+    }
+  }
+
   
   useEffect(componentDidMount, []);
 
@@ -74,11 +87,13 @@ export function HomePage(props: IPage<never>): React.ReactElement<IPage<never>> 
         <section className={LEADING_CLASS}>
           <h1>What can I<br /> <span>brew</span> you for?</h1>
           <p>Brewing <b>beer</b> and <b>code</b></p>
+
+          <div className={SCROLL_CLASS} onClick={scrollDown}>
+            <ChevronDown size={48} />
+          </div>
         </section>
 
         <section className={BLOG_CLASS}>
-          {/* <h2>Recent thoughts</h2> */}
-
           <ArticleList
             options={posts}
           />

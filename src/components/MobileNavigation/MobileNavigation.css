@@ -5,6 +5,8 @@
   @apply .fixed;
   @apply .top-0;
   @apply .left-0;
+  @apply .pointer-events-none;
+  @apply .z-10;
 
   @screen lg {
     @apply .hidden;
@@ -86,6 +88,8 @@
   }
 
   &--active {
+    @apply .pointer-events-auto;
+
     ul {
       @apply .visible;
       @apply .opacity-100;

@@ -11,7 +11,7 @@
   @apply .pr-5;
   @apply .pt-6;
   @apply .cursor-pointer;
-  @apply .z-10;
+  @apply .pointer-events-auto;
   width: 50px;
   height: 45px;
 

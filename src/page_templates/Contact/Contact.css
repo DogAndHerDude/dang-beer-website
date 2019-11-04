@@ -38,6 +38,11 @@
     &:first-child {
       @apply .pt-0;
       @apply .pb-24;
+
+      @screen lg {
+        @apply .px-8;
+        @apply .pt-48;
+      }
     }
 
     @screen lg {

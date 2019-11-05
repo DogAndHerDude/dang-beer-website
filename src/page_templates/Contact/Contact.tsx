@@ -5,6 +5,8 @@ import { Twitter, Instagram } from 'react-feather';
 import SEO from '../../components/SEO';
 import Layout from '../../components/Layout';
 
+import ContactPageSEO from './ContactPageSEO';
+
 import './Contact.css';
 
 export const BASE_CLASS = 'contact-page';
@@ -19,7 +21,7 @@ export function ContactPage(): React.ReactElement<{}> | null {
     <Layout initiated={initiated}>
       <SEO
         title="Dang Beer | Contact"
-        description="placeholder"
+        description={ContactPageSEO.getDescription()}
         lang="en"
         meta={[]}
       />

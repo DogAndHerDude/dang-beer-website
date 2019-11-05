@@ -1,7 +1,6 @@
 
 .contact-page {
   @apply .w-screen;
-  @apply .min-h-screen;
   @apply .flex;
   @apply .flex-col-reverse;
 

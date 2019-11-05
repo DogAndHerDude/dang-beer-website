@@ -12,6 +12,8 @@ import SEO from '../../components/SEO';
 import ArticleList from '../../components/ArticleList';
 import { BlogPost } from '../../models/BlogPost';
 
+import HomePageSEO from './HomePageSEO';
+
 import './Home.css';
 
 export const BASE_CLASS = 'page-home';
@@ -78,7 +80,7 @@ export function HomePage(props: IPage<never>): React.ReactElement<IPage<never>> 
     <Layout initiated={initiated}>
       <SEO
         title="Dang Beer"
-        description="placeholder"
+        description={HomePageSEO.getDescription()}
         lang="en"
         meta={[]}
       />

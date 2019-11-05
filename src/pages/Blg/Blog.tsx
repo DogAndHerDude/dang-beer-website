@@ -16,6 +16,7 @@ import './Blog.css';
 export const BASE_CLASS = 'blog-page';
 export const CONTENT_CLASS = `${BASE_CLASS}__content`;
 
+import BlogPageSEO from './BlogPageSEO';
 
 const blogService = new BlogService();
 
@@ -27,7 +28,7 @@ export function BlogPage(props: IPage<any>): React.ReactElement<IPage<any>> {
     <Layout initiated={initiated} >
       <SEO
         title="Dang Beer | Blog"
-        description="blog"
+        description={BlogPageSEO.getDescription()}
         lang="en"
         meta={[]}
       />

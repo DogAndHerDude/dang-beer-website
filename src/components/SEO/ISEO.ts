@@ -1,7 +1,8 @@
 
 
 export interface IMeta {
-  name: string;
+  name?: string | undefined;
+  property?: string | undefined;
   content: string;
 }
 

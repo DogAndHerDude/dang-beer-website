@@ -6,6 +6,8 @@ import { Twitter, Instagram } from 'react-feather';
 import SEO from '../../components/SEO';
 import Layout from '../../components/Layout';
 
+import AboutPageSEO from './AboutPageSEO';
+
 import { IAboutPageProps } from './IAbout';
 
 import './About.css';
@@ -16,6 +18,7 @@ export const DESCRIPTION_CLASS = `${BASE_CLASS}__description`;
 export const IMAGE_CLASS = `${BASE_CLASS}__image`;
 export const IMAGE_WRAPPER_CLASS = `${IMAGE_CLASS}-wrapper`;
 export const SOCIAL_ICONS_CLASS = `${BASE_CLASS}__social-icons`;
+export const LOCATION_CLASS = `${BASE_CLASS}__location`;
 
 
 
@@ -40,7 +43,7 @@ export function AboutPage(props: IAboutPageProps): React.ReactElement<IAboutPage
     <Layout initiated={initiated}>
       <SEO
         title="Dang Beer | About"
-        description="placeholder"
+        description={AboutPageSEO.getDescription()}
         lang="en"
         meta={[]}
       />
@@ -59,6 +62,11 @@ export function AboutPage(props: IAboutPageProps): React.ReactElement<IAboutPage
                 <Twitter />
               </a>
             </div>
+          </div>
+          <div className={LOCATION_CLASS}>
+            <address>
+              Vilnius, Lithuania
+            </address>
           </div>
         </section>
 

@@ -6,7 +6,7 @@
   @apply .flex-col-reverse;
 
   @screen lg {
-    @apply .min-h-0;
+    @apply .min-h-screen;
     @apply .flex-row;
     @apply .items-center;
     @apply .justify-center;
@@ -41,7 +41,7 @@
 
       @screen lg {
         @apply .px-8;
-        @apply .pt-48;
+        @apply .pt-32;
       }
     }
 
@@ -51,7 +51,7 @@
       @apply .h-screen;
       @apply .min-h-screen;
       @apply .px-8;
-      @apply .pt-48;
+      @apply .pt-32;
     }
 
     @screen 2xl {

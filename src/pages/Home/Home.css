@@ -57,8 +57,8 @@
       }
 
       span {
-        @apply .font-serif;
-        @apply .font-bold;
+        /* @apply .font-serif;
+        @apply .font-bold; */
         @apply .text-yellow-400;
       }
     }

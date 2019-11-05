@@ -3,8 +3,10 @@ module.exports = {
     title: `Dang Beer`,
     description: `My personal blog on brewing beer and writing code`,
     author: `Dominykas Bartkus`,
+    siteUrl: `https://dangbeer.com`,
   },
   plugins: [
+    `gatsby-plugin-sitemap`,
     `gatsby-plugin-sharp`,
     `gatsby-transformer-sharp`,
     {
@@ -55,7 +57,9 @@ module.exports = {
     `gatsby-plugin-offline`,
     {
       resolve: `gatsby-plugin-google-analytics`,
-      trackingId: `UA-151544311-1`,
+      options: {
+        trackingId: `UA-151544311-1`,
+      },
     },
   ],
 }

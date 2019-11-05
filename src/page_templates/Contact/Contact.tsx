@@ -47,7 +47,7 @@ export function ContactPage(): React.ReactElement<{}> | null {
           <h1>Wanna whisper little sweet nothings in my ear?</h1>
           
           <p>
-            Or perhaps you want to give me advice, correct me, start a discuession or just tell me I'm plaing wrong or stupid?
+            Or perhaps you want to give me advice, correct me, start a discussion or just tell me I'm plaing wrong or stupid?
             Well, then you're in luck! You can hit me up on my instagram or twitter.
           </p>
         </section>

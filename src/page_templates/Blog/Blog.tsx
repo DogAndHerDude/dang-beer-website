@@ -8,6 +8,7 @@ import BackToTop from '../../components/BackToTop';
 
 import { IPage } from '../../models/IPage';
 
+import BlogPageSEO from './BlogPageSEO';
 import { BlogService } from '../../services/BlogService';
 
 import './Blog.css';
@@ -16,7 +17,6 @@ import './Blog.css';
 export const BASE_CLASS = 'blog-page';
 export const CONTENT_CLASS = `${BASE_CLASS}__content`;
 
-import BlogPageSEO from './BlogPageSEO';
 
 const blogService = new BlogService();
 

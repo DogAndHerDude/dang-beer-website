@@ -1,7 +1,7 @@
 
 import { graphql } from 'gatsby';
 
-import BlogPage from './Blg';
+import BlogPage from '../page_templates/Blog';
 
 export default BlogPage;
 

@@ -1,5 +1,5 @@
 
-import Home from './Home';
+import Home from '../page_templates/Home';
 import { graphql } from 'gatsby';
 
 export default Home;
